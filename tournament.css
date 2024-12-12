@@ -1,0 +1,169 @@
+.tournament-timer {
+    width: calc(100% - 31px);
+    background: linear-gradient(180deg, #ff5a5a 0%, #a92424 100%);
+    border: 1px solid #6e3535;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 10px;
+    display: table;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 32px;
+}
+.tournament-timer .tournament-name {
+    text-transform: uppercase;
+    color: #feae00;
+    font-size: 18px;
+    text-shadow: 0 2px 2px rgb(0 0 0 / 50%);
+    width: 100%;
+    text-align: center;
+}
+
+.tournament-timer .tournament-prize-container {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.tournament-timer .tournament-prize {
+    font-size: 34px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 0 .5em;
+    width: 300px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.tournament-timer .tournament-prize:after,
+.tournament-timer .tournament-prize:before {
+    content: "";
+    background: 50%/contain no-repeat;
+    display: block;
+    width: .55em;
+    height: 1.25em
+}
+
+.tournament-timer .tournament-prize:before {
+    background-image: url(../images/laurel-left.png)
+}
+
+.tournament-timer .tournament-prize:after {
+    background-image: url(../images/laurel-right.png)
+}
+
+.tournament-timer .tournament-counter {
+    display: table;
+    margin: 0 auto;
+}
+
+.tournament-timer .tournament-counter .counter-counter {
+    display: table;
+    float: left;
+    margin-left: 13px;
+}
+
+.tournament-timer .tournament-counter .counter-counter:first-child {
+    margin-left: 0;
+}
+
+.tournament-timer .tournament-counter .counter-counter .counter-tabs {
+    display: table;
+}
+.tournament-timer .tournament-counter .counter-counter .counter-tabs span {
+    display: block;
+    width: 30px;
+    height: 40px;
+    background: #8d2424;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    margin-left: 5px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 26px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tournament-timer .tournament-counter .counter-counter .counter-tabs span:first-child {
+    margin-left: 0;
+}
+
+.tournament-timer .tournament-counter .counter-counter .counter-title {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.tournament-timer .tournament-counter-container {
+    width: 100%;
+    display: table;
+    float: left;
+}
+
+.tournament-timer .tournament-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+}
+
+.tournament-timer .tournament-icon img {width: 30px;margin: 2.5px 10px;}
+
+@media (min-width: 992px) {
+    .tournament-timer .tournament-icon {
+        display: block;
+    }
+
+    .tournament-timer .tournament-name {
+        width: calc(33% - 60px);
+        float: left;
+        height: 61px;
+        line-height: 61px;
+        text-align: left;
+        font-size: 19px;
+    }
+
+    .tournament-timer .tournament-prize-container {
+        width: 33%;
+        float: left;
+        margin: 0;
+        height: 52px;
+        margin-top: 5px;
+    }
+
+    .tournament-timer .tournament-counter-container  {
+        width: 33%;
+    }
+}
+
+@media (max-width: 990px) {
+    .tournament-timer {
+        background: url(../images/background-opacity.jpg);
+        background-size: cover;
+        border: none;
+    }
+
+    .tournament-timer .tournament-counter .counter-counter .counter-tabs span {
+        background: #292929;
+    }
+}
+
+.christmas .tournament-section-banner-icon img {
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+    .christmas .tournament-section-banner-icon img {
+        height: 85vw;
+    }    
+
+    .christmas .tournament-section-banner-icon {
+        position: absolute !important;
+        z-index: -1 !important;
+    }
+}

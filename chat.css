@@ -1,0 +1,56 @@
+.chat-plug {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    z-index: 999999;
+    cursor: pointer;
+
+    background-image: linear-gradient(90deg, #00aafe, #3473fa) !important;
+    background-image: -webkit-gradient(linear, left top, right top, from(#00aafe), to(#3473fa)) !important;
+    background-image: -o-linear-gradient(left, #00aafe 0, #3473fa 100%) !important;
+}
+
+.chat-plug svg {
+    width: 34px;
+    height: 34px;
+    margin: 13px;
+}
+
+.mobile-game-app .chat-plug {
+    display: none;
+}
+
+.chat-plug .message {
+    background: #fff;
+    border-radius: 11px;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    margin-top: -74px;
+    margin-left: -139px;
+    color: #000;
+    padding: 10px;
+}
+
+.chat-plug .message::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    margin-top: 18px;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    margin-left: 30px;
+}
+
+.chat-plug .message  .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 160px;
+}
